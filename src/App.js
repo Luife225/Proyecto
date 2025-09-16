@@ -6,12 +6,14 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 import { Header } from './Componentes/Header';
 import Footer from './Componentes/Footer';
+import { Contenido } from './Componentes/Contenido';
 
 function App() {
   return (
     <Router>
       <div className="App">
         {/* Navbar de Bootstrap */}
+
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">MiProyecto</Link>
@@ -32,7 +34,7 @@ function App() {
                   <Link className="nav-link" to="/inicio">Inicio</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/acerca">Acerca de</Link>
+                  <Link className="nav-link" to="/acerca">Pruebas</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/productos">Productos</Link>
@@ -59,7 +61,7 @@ function App() {
             <Route path="/inicio" element={<Header></Header>} />
 
             {/* Ruta para el componente Acerca de */}
-            <Route path="/acerca" element={<div><h2>Componente "Acerca de"</h2><p>Aquí irá la información sobre nosotros.</p></div>} />
+            <Route path="/acerca" element={<Contenido></Contenido>} />
 
             {/* Ruta para el componente Productos */}
             <Route path="/productos" element={<div><h2>Componente de Productos</h2><p>Aquí se mostrará la lista de productos.</p></div>} />
