@@ -61,10 +61,10 @@ function App() {
             <Route path="/inicio" element={<Header></Header>} />
 
             {/* Ruta para el componente Acerca de */}
-            <Route path="/acerca" element={<Contenido></Contenido>} />
+            <Route path="/acerca" element={<div><h2>Página de nosotros</h2><p>Bienvenido a la página de nosotros</p></div>} />
 
             {/* Ruta para el componente Productos */}
-            <Route path="/productos" element={<div><h2>Componente de Productos</h2><p>Aquí se mostrará la lista de productos.</p></div>} />
+            <Route path="/productos" element={<Contenido></Contenido>} />
             
             {/* Ruta para el componente Contacto */}
             <Route path="/contacto" element={<div><h2>Componente de Contacto</h2><p>Aquí irá el formulario de contacto.</p></div>} />
