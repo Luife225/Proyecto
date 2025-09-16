@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 import { Header } from './Componentes/Header';
+import { Contenido } from './Componentes/Contenido';
 
 function App() {
   return (
@@ -58,7 +59,7 @@ function App() {
             <Route path="/inicio" element={<Header></Header>} />
 
             {/* Ruta para el componente Acerca de */}
-            <Route path="/acerca" element={<div><h2>Componente "Acerca de"</h2><p>Aquí irá la información sobre nosotros.</p></div>} />
+            <Route path="/acerca" element={<Contenido></Contenido>} />
 
             {/* Ruta para el componente Productos */}
             <Route path="/productos" element={<div><h2>Componente de Productos</h2><p>Aquí se mostrará la lista de productos.</p></div>} />
