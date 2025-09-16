@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 import { Header } from './Componentes/Header';
+import Footer from './Componentes/Footer';
 
 function App() {
   return (
@@ -68,11 +69,7 @@ function App() {
           </Routes>
         </main>
 
-        <footer className="bg-light text-center text-lg-start mt-5">
-            <div className="text-center p-3" style={{backgroundColor: 'rgba(0, 0, 0, 0.05)'}}>
-                © 2025 Mi Proyecto React
-            </div>
-        </footer>
+        <Footer />
       </div>
     </Router>
   );
