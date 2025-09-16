@@ -31,7 +31,7 @@ function App() {
                   <Link className="nav-link" to="/inicio">Inicio</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/acerca">Acerca de</Link>
+                  <Link className="nav-link" to="/acerca">Pruebas</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/productos">Productos</Link>
